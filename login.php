@@ -47,8 +47,6 @@
 </body>
 <?php
 
-require 'conn.php';
-
 if (!$conn) {
     die("Koneksi ke database gagal: " . mysqli_connect_error());
 }
