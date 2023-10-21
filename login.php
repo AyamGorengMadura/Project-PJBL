@@ -46,12 +46,6 @@
 
 </body>
 <?php
-
-$conn = mysqli_connect("localhost", "root","","dabase_project");
-
-if (!$conn) {
-    die("Koneksi ke database gagal: " . mysqli_connect_error());
-}
     
 if (isset($_POST["login"]) === 1) {
 
