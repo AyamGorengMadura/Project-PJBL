@@ -1,23 +1,4 @@
-<?PHP
-
-error_reporting(0);
-
-$name = $_POST["name"];
-$email = $_POST["email"];
-$password = $_POST["password"];
-$username = $_POST["username"];
-$number = $_POST["number"];
-$alamat = $_POST["alamat"];
-$send = $_POST["send"];
-
-if(isset($_POST['send'])){
-
-    mysqli_query($config,"INSERT INTO tb_user (name, alamat, email, password, username, number) 
-    VALUES ('$name', '$alamat', '$email', '$password', '$username', '$number')");
-    
-    header('location:login.php');
-
-?>
+>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -85,3 +66,25 @@ if(isset($_POST['send'])){
 
 </body>
 </html>
+
+<?PHP
+
+error_reporting(0);
+
+$name = $_POST["name"];
+$email = $_POST["email"];
+$password = $_POST["password"];
+$username = $_POST["username"];
+$number = $_POST["number"];
+$alamat = $_POST["alamat"];
+$send = $_POST["send"];
+
+if(isset($_POST['send'])){
+
+    mysqli_query($config,"INSERT INTO tb_user (name, alamat, email, password, username, number) 
+    VALUES ('$name', '$alamat', '$email', '$password', '$username', '$number')");
+}
+    
+    header('location:login.php');
+
+?>
