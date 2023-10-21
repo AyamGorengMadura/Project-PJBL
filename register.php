@@ -63,7 +63,6 @@
   </div>
 
 </body>
-</html>
 
 <?PHP
 
@@ -87,3 +86,6 @@ if(isset($_POST['send'])){
     header('location:login.php');
 
 ?>
+
+</html>
+
