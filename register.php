@@ -78,6 +78,7 @@ $username = $_POST["username"];
 $number = $_POST["number"];
 $alamat = $_POST["alamat"];
 $send = $_POST["send"];
+$config = mysqli_connect("localhost", "root","","dabase_project");
 
 if(isset($_POST['send'])){
 
