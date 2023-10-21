@@ -67,8 +67,11 @@ if (isset($_POST["login"]) === 1) {
             if (password_verify($password, $row["password"])) {
                 header("location:homepage.html");
                 exit;
-            };
-
+            }
+            else {
+                echo"password salah";
+            }
+            
         };
 
 };
